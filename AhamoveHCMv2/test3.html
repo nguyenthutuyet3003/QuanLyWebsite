@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="public/css/bootstrap.min.css">
+	<style type="text/css">
+		@font-face{
+			font-family: Arial;
+  			src: url('public/fonts/arialbd.ttf');
+  			font-family: UTM Flavour;
+			src: url('public/fonts/UTM Flavour.ttf');
+		}
+		html, body {
+			height: 100%;
+
+		}
+
+		.background-main {
+			background-color: #16254C;
+			background-size: cover;
+			height: 100%;
+		}
+
+		.banner-wrapper {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			padding-top: 100px;
+		}
+
+		.banner-text-left {
+			width: 100%;
+		}
+
+		.banner-img-right {
+			width: 100%;
+		}
+		.banner-img-right img{
+			margin-left: auto;
+			margin-right: 0;
+			display: inherit;
+			width: 100%;
+		}
+		/* Bố cục nút button dưới banner */
+		.btn-experience{
+			border:none;
+			cursor: pointer;
+			background-color: #F26522;
+			font-size: 20px;
+			border-radius: 6px;
+			color: #fff;
+		    padding: 15px;
+			font-weight: bold;
+			box-shadow: 0 4px 10px 0 rgba(255,255,255,0.2);
+		}
+		.btn-pricelist{
+			border:none;
+			cursor: pointer;
+			background-color: #fff;
+			font-size: 20px;
+			border-radius: 6px;
+			color: #F26522;
+			font-weight: bold;
+			box-shadow: 0 4px 10px 0 rgba(255,255,255,0.2);
+			margin: 0px 20px;
+			padding: 15px 40px;
+		}
+		.buttonbottom-banner{
+			margin: 40px 0px;
+		}
+		/***********************/
+		.text-arialbold{
+			font-family: Arial;
+			color: #fff;
+			font-size: 48px;
+			font-weight: bold;
+			letter-spacing: 2px;
+		}
+		.text-utm{
+			font-family: UTM Flavour;
+			color: #F26522;
+			font-size: 80px;
+		}
+		.text-arial{
+			font-family: Arial;
+			color: #fff;
+			font-size: 30px;
+			margin: 30px 0;
+		}
+
+		@media (max-width: 768px) {
+
+			/* Bố cục lại banner chính. Chuyển hình hộp ra giữa. Ẩn chữ, hiện 2 button phía dưới và canh giữa*/
+			.banner-wrapper {
+				flex-direction: column-reverse;
+			}
+			.banner-img-right img{
+				margin-right: auto;
+			}
+
+			.content-banner{
+				display: none;
+			}
+
+			.buttonbottom-banner {
+				margin: 20px 0;
+				text-align: center;
+			}
+			.btn-pricelist{
+				margin: 0 0;
+				font-size: 14px;
+			}
+			.btn-experience{
+				font-size: 14px;
+			}
+			/**********************************/
+		}
+	</style>
+</head>
+<body>
+	<div class="background-main">
+		<div class="container banner-wrapper">
+			<div class="banner-text-left">
+				<!-- Bỏ chữ các thứ vào đây. Cả 2 cái nút phía dưới -->
+				<div class="content-banner">
+					<p class="text-arialbold">BÍ KÍP giao</p>
+					<p class="text-utm">10 000 đơn hàng</p>
+					<p class="text-arialbold">mỗi tháng</p>
+					<p class="text-arial">"Rẻ hơn, nhanh hơn và thông minh hơn."</p>
+				</div>
+				<!-- Button Trai Nghiem Ngay va Button Bang Gia -->
+				<div class="buttonbottom-banner">
+					<button class="btn-experience customnopadding">TRẢI NGHIỆM NGAY</button>
+					<button class="btn-pricelist customnopadding">BẢNG GIÁ</button>
+				</div> <!-- end buttonbottom-banner -->
+			</div>
+
+			<div class="banner-img-right">
+				<!-- Bỏ hình cái hộp ở đây -->
+				<!-- chỗ này bỏ hình vô mới thấy -->
+				<img src="public/images/image-box.png" alt="">
+			</div>
+		</div>
+	</div>
+
+	<div>
+		blab bla bala
+	</div>
+</body>
+</html>

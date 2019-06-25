@@ -1,0 +1,69 @@
+body{}
+.title-blog{
+	font-size: 40px;
+	font-weight: bold;
+	color: #f15f22;
+	text-align: center;
+	padding: 90px 0px;
+}
+.card-blog img{
+	width: 90%;
+	height: auto;
+	border-radius: 40px;
+}
+/* On mouse-over, add a deeper shadow */
+.card-blog img:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.title-pay, .content-blog{
+	text-align: justify;
+}
+.title-pay {
+    font-size: 35px;
+    color: #16254C;
+    font-weight: bold;
+}
+p.content-blog {
+    font-size: 22px;
+    color: #16254C;
+}
+span.text-orange {
+    color: #F26522;
+    font-weight: bold;
+}
+.row-blog{
+	text-align: center;
+}
+.cricle-arrow{
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	background-color: #F26522;
+	color: #fff;
+	border-radius: 100%;
+	bottom: 10%;
+	right: 0;
+	cursor: pointer;
+}
+.cricle-arrow i{
+	line-height: 2.5;
+	font-size: 40px;
+}
+.box-img{
+	position: relative;
+}
+.cricle-arrow-2{
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	background-color: #F26522;
+	color: #fff;
+	border-radius: 100%;
+	left: 0;
+	bottom: 10%;
+	cursor: pointer;
+}
+.cricle-arrow-2 i{
+	line-height: 2.5;
+	font-size: 40px;
+}

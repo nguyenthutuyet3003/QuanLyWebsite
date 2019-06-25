@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>test</title>
+	<link rel="shortcut icon" type="image/ico" href="public/images/favicon.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="public/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="public/font-awesome-4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript" src="public/js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="public/js/bootstrap.min.js"></script>
+	<style type="text/css">
+	
+	.title-shipper {
+		color: #F26522;
+		font-weight: bold;
+		font-size: 46px;
+		text-align: right;
+		margin-bottom: 40px;
+	}
+	.circle-number{
+		width: 80px;
+		height: 80px;
+		border-radius: 100%;
+		background: #F26522;
+		text-align: center;
+		margin: 30px 0;
+		font-size: 28px;
+		font-weight: bold;
+		line-height: 80px;
+		color: #4D4C4D; 
+		display: inline-block;
+	}
+	.text-proceduce{
+		margin: 10px 0px;
+		font-size: 20px;
+		font-weight: bold;
+		color: #4D4C4D;
+		text-align: center;
+	}
+	.boderorange-shipper{
+		border-radius: 10px;
+		height: 5px;
+		background-color: #F26522;
+		width: 22%;
+	}
+
+	.shipperfast-background{
+		background: url('../images/banner-shipper.png');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: -520px 100px;
+		width: 100%;
+
+		flex-direction: row;
+		display: -webkit-box;
+    	display: -moz-box;
+    	display: -ms-flexbox;
+    	display: -webkit-flex;
+    	display: flex;
+    	justify-content: center;
+
+    	position: relative;
+	}
+	.flex-row {
+		text-align: center;
+		width: 100%;
+	}
+
+	.step {
+		padding: 10px 50px;
+	}
+
+	.card-shipper img {
+		box-shadow: 0 4px 15px 0 rgba(0,0,0,0.2);
+	}
+
+	.boderorange-shipper{
+		border-radius: 10px;
+		height: 6px;
+		background-color: #F26522;
+		width: 23%;
+		position: absolute;
+	}
+
+	.line-step-1 {
+		bottom: 19%;
+		left: 22%;
+	}
+
+	.line-step-2 {
+		bottom: 19%;
+		left: 55%;
+	}
+
+	@media (max-width: 768px){
+
+		/* Chuyển sang chế độ cột phần ship nhanh */
+		.shipperfast-background {
+			flex-direction: column;
+		}
+
+		/* Giảm khoảng cách giữa hình và chữ phần ship nhanh */
+		.circle-number {
+			margin: 15px 0;
+		}
+
+		/* Ẩn đường thẳng ở di động */
+		.boderorange-shipper {
+			display: none;
+		}
+	}
+
+	@media (max-width: 992px) {
+		/* Ẩn đường thẳng ở di động */
+		.boderorange-shipper {
+			display: none;
+		}
+	}
+
+</style>
+</head>
+<body>
+	<div class="shipperfast">
+		<div class="container">
+			<div class="title-shipper">
+				<span>Ship hàng NHANH với AhaMove 3 bước</span> <img src="public/images/line-phai.png" alt="">
+			</div>
+			<!-- row -->
+			<div class="shipperfast-background">
+				<div class="flex-row">
+					<div class="card-shipper">
+						<img src="public/images/shipper(2).png" alt="">
+					</div>
+					<div class="circle-number">1</div>
+					
+					<div class="step">
+						<span class="text-proceduce">Nhận thông tin điểm nhận/gửi hàng</span>
+					</div>
+				</div>
+				
+				<div class="flex-row">
+					<div class="card-shipper">
+						<img src="public/images/shipper(3).png" alt="">
+					</div>
+
+					<div class="circle-number">2</div>
+					
+					<div class="step">
+						<span class="text-proceduce">Nhận thông tin người nhận hàng và tiền ứng</span>
+					</div>
+				</div>
+		
+				<div class="flex-row">
+					<div class="card-shipper">
+						<img src="public/images/shipper(1).png" alt="">
+					</div>
+					
+					<div class="circle-number">3</div>
+					
+					<div class="step">
+						<span class="text-proceduce">Nhận mã khuyến mãi, hẹn giờ, ghi chú cho tài xế</span>
+					</div>
+				</div>
+
+				<div class="boderorange-shipper line-step-1"></div>
+				<div class="boderorange-shipper line-step-2"></div>
+			</div>
+		</div>
+	</div> <!-- end shipperfast -->
+</body>
+</html>
+
